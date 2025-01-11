@@ -1,0 +1,76 @@
+body {
+    background-image: url('../Imgs/background.JPG'); 
+    background-size: cover;
+    font-family: "Playfair Display", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    width: 80%;
+    display: flex;               
+    flex-direction: column;      
+    justify-content: center;      
+    align-items: center;         
+}
+.box {
+    width: 80%;
+    padding: 3vh 6vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3vh;
+    margin: -1.5vh;              
+    border-radius: 2vh;
+    background-color: #ffffff;
+    border: solid 1vh #000000;
+    color: #000000;
+}
+.input {
+    display: flex;            
+    align-items: center;      
+    justify-content: center;  
+    font-size: 3vh;
+}
+#input {
+    text-align: left;
+    font-size: 2.5vh;
+    height: 4.5vh;
+    width: 110vh;
+    background-color: #ffffff;
+    border: solid 0.25vh #919191;
+    color: #000000;
+    font-family: "Playfair Display", serif;
+    border-radius: 0.5vh;
+}
+#submit {
+    text-align: center;
+    cursor: pointer;
+    font-size: 2.5vh;
+    background-color: #c2c2c2;
+    border: solid 0.5vh #868686;
+    color: #868686;
+    border-radius: 0.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 5.15vh;
+    width: 6vh;
+}
+#submit:hover {
+    background-color: #00c21a;
+    border: solid 0.5vh #008b00;
+}
+#tip {
+    cursor: pointer;
+    padding: 2vh 4vh;
+    text-align: center;
+    font-size: 2.5vh;
+    margin: 2.5vh;              
+    cursor: pointer;
+    border-radius: 4vh;
+    background-color: #ffffff;
+    border: solid 1vh #000000;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}

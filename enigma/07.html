@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="../Imgs/gift.png">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+        <title>Feliz aniversário, Cachinhos!</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box text">
+                <img src="enigma7.JPG" style="width: 125vh; height: 20vh;" alt="Estrangeiro">
+                <!-- <img src="enigma4.JPG" width="750" height="145"> -->
+            </div>
+            <div class="box input">
+                <input type="text" id="input" placeholder=" Digite Sua Resposta">
+                <button id="submit" onclick="checkAnswer()"></button>
+            </div>
+            <button id="tip" onclick="showTip()"><b>DICA</b></button>
+        </div>
+        <script>
+            function checkAnswer() {
+                const input = document.getElementById("input");
+                let value = input.value;
+                if (value.toLowerCase() == "cachinhos") {
+                    window.location.href = "../mail.html";
+                }
+                input.value = ""; 
+            };
+            const inputField = document.getElementById("input");
+            inputField.addEventListener("keypress", function (event) {
+                if (event.key === "Enter") { 
+                    checkAnswer(); 
+                }
+            });
+            function showTip() {
+            alert("Estrangeiro");
+            };
+        </script>
+    </body>
+</html>
