@@ -22,16 +22,17 @@
             </div>
         </div>
         <script>
-            let currentAudio = null;
-            window.onload = function (){
+            window.onload = function () {
                 if (currentAudio) {
                     currentAudio.pause();
                     currentAudio.currentTime = 0;
                 }
                 currentAudio = new Audio("likehim.mp3");
                 currentAudio.loop = true;
-                currentAudio.play();
-            }
-                    </script>
+                currentAudio.play().catch((err) => {
+                    console.error("Erro ao tocar o áudio:", err);
+                });
+            };
+        </script>
     </body>
 </html>
