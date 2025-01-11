@@ -23,14 +23,16 @@
         </div>
         <script>
             window.onload = function () {
-                if (currentAudio) {
-                    currentAudio.pause();
-                    currentAudio.currentTime = 0;
-                }
-                currentAudio = new Audio("likehim.mp3");
-                currentAudio.loop = true;
-                currentAudio.play().catch((err) => {
-                    console.error("Erro ao tocar o áudio:", err);
+                const audio = new Audio("likehim.mp3");
+                audio.loop = true;
+            
+                // Define o volume para 0 inicialmente
+                audio.volume = 0;
+                audio.play().then(() => {
+                    // Após o autoplay ser permitido, restaura o volume
+                    audio.volume = 1.0;
+                }).catch((err) => {
+                    console.error("O navegador bloqueou o autoplay:", err);
                 });
             };
         </script>
