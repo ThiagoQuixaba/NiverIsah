@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="image/png" href="Imgs/gift.png">
+        <link rel="stylesheet" href="mail.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+        <title>Feliz aniversário, Cachinhos!</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box text">
+                <p id="text"><b>
+                    Feliz Aniversário, Cachinhos! <br> <br>
+                    Para mim, este dia é muito importante. Afinal, é o dia em que nasceu a melhor amiga que já tive em toda a minha vida: você. <br>
+                    Fiz este site com a intenção de te divertir neste dia tão especial, já que sei que você gosta de enigmas. Espero que os enigmas tenham cumprido como seu propósito, que era de te entreter. <br>
+                    Te amo, Cachinhos! 🤍
+                </b></P>
+                <p id="asssinatura">
+                    <b>Ass: Quix</b>
+                </p>
+            </div>
+        </div>
+        <script>
+            let currentAudio = null;
+            window.onload = function (){
+                if (currentAudio) {
+                    currentAudio.pause();
+                    currentAudio.currentTime = 0;
+                }
+                currentAudio = new Audio("likehim.mp3");
+                currentAudio.loop = true;
+                currentAudio.play();
+            }
+                    </script>
+    </body>
+</html>

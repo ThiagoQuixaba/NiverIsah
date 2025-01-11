@@ -1,0 +1,116 @@
+body {
+    background-image: url('Imgs/background2.JPG'); 
+    background-size: cover;
+    font-family: "Playfair Display", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+.container {
+    width: 80%;
+    display: flex;               
+    flex-direction: column;      
+    justify-content: center;      
+    align-items: center;   
+    position: relative;      
+}
+.box {
+    width: 53%;
+    padding: 3vh 6vh;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-size: 3vh;
+    margin: -1.5vh;
+    border-radius: 2vh;
+    color: #000000;
+    border: solid 1vh #000000;
+    position: relative;
+    background: linear-gradient(135deg, #ff7b00, #1f1e1e, #000000);
+    overflow: hidden;
+    z-index: 1; 
+    position: relative;
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><polygon points="4,0 5,2 7,3 5,4 4,7 3,4 1,3 3,2" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><polygon points="4,0 5,2 7,3 5,4 4,7 3,4 1,3 3,2" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="6" height="6"><polygon points="3,0 4,1 5,2 4,3 3,5 2,3 1,2 2,1" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="7" height="7"><polygon points="3.5,0 4.5,2 6,3 4.5,4 3.5,6 2.5,4 1,3 2.5,2" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5" height="5"><polygon points="2.5,0 3,1 4,2 3,3 2.5,4 2,3 1,2 2,1" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="6" height="6"><polygon points="3,0 3.5,1 5,2 3.5,3 3,4 2.5,3 1,2 2.5,1" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="7" height="7"><polygon points="3.5,0 4,2 6,3 4,4 3.5,6 2.5,4 1,3 2.5,2" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5" height="5"><polygon points="2.5,0 3,1 4,2 3,3 2.5,4 2,3 1,2 2,1" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><polygon points="4,0 5,2 7,3 5,4 4,7 3,4 1,3 3,2" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="6" height="6"><polygon points="3,0 4,1 5,2 4,3 3,5 2,3 1,2 2,1" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="7" height="7"><polygon points="3.5,0 4.5,2 6,3 4.5,4 3.5,6 2.5,4 1,3 2.5,2" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5" height="5"><polygon points="2.5,0 3,1 4,2 3,3 2.5,4 2,3 1,2 2,1" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="6" height="6"><polygon points="3,0 3.5,1 5,2 3.5,3 3,4 2.5,3 1,2 2.5,1" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="7" height="7"><polygon points="3.5,0 4,2 6,3 4,4 3.5,6 2.5,4 1,3 2.5,2" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5" height="5"><polygon points="2.5,0 3,1 4,2 3,3 2.5,4 2,3 1,2 2,1" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><polygon points="4,0 5,2 7,3 5,4 4,7 3,4 1,3 3,2" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="6" height="6"><polygon points="3,0 4,1 5,2 4,3 3,5 2,3 1,2 2,1" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="7" height="7"><polygon points="3.5,0 4.5,2 6,3 4.5,4 3.5,6 2.5,4 1,3 2.5,2" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5" height="5"><polygon points="2.5,0 3,1 4,2 3,3 2.5,4 2,3 1,2 2,1" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="6" height="6"><polygon points="3,0 3.5,1 5,2 3.5,3 3,4 2.5,3 1,2 2.5,1" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="7" height="7"><polygon points="3.5,0 4,2 6,3 4,4 3.5,6 2.5,4 1,3 2.5,2" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5" height="5"><polygon points="2.5,0 3,1 4,2 3,3 2.5,4 2,3 1,2 2,1" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><polygon points="4,0 5,2 7,3 5,4 4,7 3,4 1,3 3,2" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="6" height="6"><polygon points="3,0 4,1 5,2 4,3 3,5 2,3 1,2 2,1" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="7" height="7"><polygon points="3.5,0 4.5,2 6,3 4.5,4 3.5,6 2.5,4 1,3 2.5,2" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5" height="5"><polygon points="2.5,0 3,1 4,2 3,3 2.5,4 2,3 1,2 2,1" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5" height="5"><polygon points="2.5,0 3,1 4,2 3,3 2.5,4 2,3 1,2 2,1" fill="white" /></svg>'),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="5" height="5"><polygon points="2.5,0 3,1 4,2 3,3 2.5,4 2,3 1,2 2,1" fill="white" /></svg>');
+    background-size: 2vh 2vh;
+    background-repeat: no-repeat;
+    background-position: 
+        10% 12%, 20% 30%, 40% 40%, 60% 20%, 80% 50%, 
+        15% 70%, 35% 80%, 55% 60%, 75% 10%, 85% 90%, 
+        5% 30%, 25% 50%, 45% 60%, 65% 80%, 95% 20%, 
+        10% 80%, 50% 40%, 70% 60%, 90% 30%, 
+        30% 70%, 50% 20%, 60% 80%, 80% 60%, 90% 50%;
+    pointer-events: none;
+    opacity: 0.8;
+    z-index: -1; 
+}
+
+#text{
+    text-align: justify;
+    color: #FFD700;
+    text-shadow: 
+    0.1vh 0.1vh 0 #000000, 
+    -0.1vh -0.1vh 0 #000000,
+    0.1vh -0.1vh 0 #000000,
+    -0.1vh 0.1vh 0 #000000;
+    padding: 0vh 0vh 0vh 0vh;
+    margin: -1vh -1vh 5vh -1vh;
+    font-size: 3.5vh;
+    font-family: "Playfair Display", serif;
+    border-bottom: 0.3vh solid #FFD700;
+    display: inline;
+    z-index: 2;
+}
+#asssinatura{
+    text-align: right;
+    color: #FFD700;
+    text-shadow: 
+        0.1vh 0.1vh 0.5vh #000000,
+        -0.1vh -0.1vh 0.5vh #000000,
+        0.1vh -0.1vh 0.5vh #000000,
+        -0.1vh 0.1vh 0.5vh #000000;
+    padding: 0vh 0vh -4vh 0vh; 
+    margin: 7.5vh -1vh -0.5vh -1vh;
+    font-size: 5.5vh;
+    font-family: "Playfair Display", serif;
+    z-index: 3;
+}
