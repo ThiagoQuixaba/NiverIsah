@@ -22,19 +22,11 @@
             </div>
         </div>
         <script>
-            window.onload = function () {
-                const audio = new Audio("likehim.mp3");
-                audio.loop = true;
-            
-                // Define o volume para 0 inicialmente
-                audio.volume = 0;
-                audio.play().then(() => {
-                    // Após o autoplay ser permitido, restaura o volume
-                    audio.volume = 1.0;
-                }).catch((err) => {
-                    console.error("O navegador bloqueou o autoplay:", err);
-                });
-            };
+            window.onload = function (){
+                currentAudio = new Audio("likehim.mp3");
+                currentAudio.loop = true;
+                currentAudio.play();
+            }
         </script>
     </body>
 </html>
